@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E10D93572971C64A00ABBC54 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E10D93562971C64A00ABBC54 /* HomeView.swift */; };
 		E15632B529719B4E0044E236 /* demo_appApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15632B429719B4E0044E236 /* demo_appApp.swift */; };
-		E15632B729719B4E0044E236 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15632B629719B4E0044E236 /* ContentView.swift */; };
+		E15632B729719B4E0044E236 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15632B629719B4E0044E236 /* LoginView.swift */; };
 		E15632B929719B4E0044E236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15632B829719B4E0044E236 /* Assets.xcassets */; };
 		E15632BC29719B4E0044E236 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E15632BB29719B4E0044E236 /* Preview Assets.xcassets */; };
 		E15632C629719B4F0044E236 /* demo_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E15632C529719B4F0044E236 /* demo_appTests.swift */; };
@@ -34,9 +35,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E10D93562971C64A00ABBC54 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		E15632B129719B4E0044E236 /* demo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E15632B429719B4E0044E236 /* demo_appApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_appApp.swift; sourceTree = "<group>"; };
-		E15632B629719B4E0044E236 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E15632B629719B4E0044E236 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		E15632B829719B4E0044E236 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E15632BB29719B4E0044E236 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E15632C129719B4F0044E236 /* demo-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demo-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +73,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E10D93532971BF3700ABBC54 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E15632B629719B4E0044E236 /* LoginView.swift */,
+				E10D93562971C64A00ABBC54 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E10D93542971C03200ABBC54 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E10D93552971C03B00ABBC54 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		E15632A829719B4E0044E236 = {
 			isa = PBXGroup;
 			children = (
@@ -94,8 +119,10 @@
 		E15632B329719B4E0044E236 /* demo-app */ = {
 			isa = PBXGroup;
 			children = (
+				E10D93552971C03B00ABBC54 /* ViewModels */,
+				E10D93542971C03200ABBC54 /* Models */,
+				E10D93532971BF3700ABBC54 /* Views */,
 				E15632B429719B4E0044E236 /* demo_appApp.swift */,
-				E15632B629719B4E0044E236 /* ContentView.swift */,
 				E15632B829719B4E0044E236 /* Assets.xcassets */,
 				E15632BA29719B4E0044E236 /* Preview Content */,
 			);
@@ -257,7 +284,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E15632B729719B4E0044E236 /* ContentView.swift in Sources */,
+				E10D93572971C64A00ABBC54 /* HomeView.swift in Sources */,
+				E15632B729719B4E0044E236 /* LoginView.swift in Sources */,
 				E15632B529719B4E0044E236 /* demo_appApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
